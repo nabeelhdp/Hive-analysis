@@ -3,24 +3,28 @@
 To execute, simply run the script with an HS2 log as the argument.
 
 Eg.
-
+```bash
 [nmoidu@HW15016 Downloads]$ sh Hive_stage_analysis.sh hiveserver2.log
 Log start time : 2018-01-25 00:00:00
 Log end time : 2018-01-25 22:34:45
 Last query parsed at : 2018-01-25 22:00:36,767
 
 ====Top 3 beeline users====
-anonymous : 882  user1 : 592  user2 : 254
+anonymous : 882
+user1 : 592
+user2 : 254
 Total number of Beeline sessions : 2528
 
 ====Top 3 metastore users====
-user3 : 184188  user5 : 104713  user9 : 39657
+user3 : 184188
+user5 : 104713
+user9 : 39657
 
 ====Top 3 metastore commands====
-get_table : 157370  get_partition_with_auth : 116156  partition_name_has_valid_characters : 20029
+get_table : 157370
+get_partition_with_auth : 116156
+partition_name_has_valid_characters : 20029
 Total Number of Metastore hits : 381746
-
-Number of Total Queries : 45207
 
 ====Total time spent in each method, Min, Max, Mean of time spent per query per method====
 
@@ -40,3 +44,6 @@ Driver.run 29346524292 17477067 65330.6
      TimeToSubmit 811130 892 1.80183
      runTasks 29421104600 17477064 65483.6
      PostHook.ATSHook 224830 41 0.500512
+
+Number of Total Queries : 45207
+```
