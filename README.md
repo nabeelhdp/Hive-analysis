@@ -3,7 +3,7 @@
 To execute, simply run the script with an HS2 log as the argument. 
 Eg.
 ```bash
-[nmoidu@HW15016 Downloads]$ sh Hive_stage_analysis.sh HaaS_Jan_2018/hiveserver2.log
+[nmoidu@HW15016 Downloads]$ sh Hive_stage_analysis.sh hiveserver2.log
 =========================================
 Log_start_time : 2018-01-25 00:00:00
 Log_end_time : 2018-01-25 22:34:45
@@ -60,7 +60,7 @@ Piping it to column -t normally gives a cleaner output.
 
 Eg.
 ```bash
-[nmoidu@HW15016 Downloads]$ sh Hive_stage_analysis.sh HaaS_Jan_2018/hiveserver2.log |column -t
+[nmoidu@HW15016 Downloads]$ sh Hive_stage_analysis.sh hiveserver2.log |column -t
 
 =========================================
 Log_start_time                                     :            2018-01-25  00:00:00
