@@ -1,0 +1,15 @@
+1) Add Tez related stages in reporting
+
+  TezJobMonitor TezRunDag  
+  TezJobMonitor TezRunVertex.Map 
+  TezJobMonitor TezRunVertex.Reducer 
+  TezJobMonitor TezSubmitToRunningDag  
+
+  TezTask TezBuildDag  
+  TezTask TezCreateVertex.Map  
+  TezTask TezCreateVertex.Reducer  
+  TezTask TezSubmitDag  
+
+2) Convert metrics output to JSON
+
+3) Push to Ambari metrics collector
